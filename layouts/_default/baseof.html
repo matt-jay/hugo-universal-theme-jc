@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+        
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+                    
+                    {{ block "main" . }}
+                    {{ end }}
+
+                </div>
+            </div>
+        </div>
+
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
