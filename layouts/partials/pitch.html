@@ -1,0 +1,48 @@
+
+
+{{ if isset .Site.Params "pitches" }}
+{{ if .Site.Params.features.enable }}
+{{ if isset .Site.Data "pitches" }}
+{{ with index .Site.Data.pitches .Site.Language.Lang }}
+<section class="background-white">
+    {{ range . }}
+    <div class="container pitch">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <h2>{{ .tagline }}</h2>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pitch-image">
+                    <img src="{{ .image }}" alt="image" />
+                </div>			
+            </div>
+            <div class="col-md-6">
+                <div class="box-simple pitch-content">
+                    {{ range .content_blocks}}
+                        {{ $x := . }}
+                        {{ if (eq (index $x "content_type") "text") }}
+                            {{ index $x "content" | markdownify }}
+                        {{ end }}
+
+                        {{ if (eq (index $x "content_type") "list") }}
+                            <ul class = "pitch-list">
+                            {{ range index $x "content" }}
+                                <li>{{ . | markdownify }}</li>
+                            {{ end }}
+                            </ul>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>	
+    </div>
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

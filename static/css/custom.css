@@ -11,3 +11,14 @@
 .box-simple {
   min-height: 230px;
 }
+
+.pitch-image{
+  text-align:center;
+}
+.pitch-image img{
+  border-radius:50%;
+}
+
+.pitch-content{
+  text-align:left;
+}
