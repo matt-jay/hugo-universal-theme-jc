@@ -114,3 +114,15 @@
 
 - id: December
   translation: December
+
+- id: clientsTitle
+  translation: Our Partners
+
+- id: clientsSubtitle
+  translation: We have proudly collaborated with the following companies.
+
+- id: testimonialsTitle
+  translation: Testimonials
+
+- id: testimonialsSubtitle
+  translation: We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.

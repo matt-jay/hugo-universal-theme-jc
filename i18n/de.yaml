@@ -114,3 +114,15 @@
 
 - id: December
   translation: Dezember
+
+- id: clientsTitle
+  translation: Referenzen
+
+- id: clientsSubtitle
+  translation: Wir sind stolz, mit diesen Kunden zusammengarbeitet zu haben.
+
+- id: testimonialsTitle
+  translation: Referenzen
+
+- id: testimonialsSubtitle
+  translation: Wir haben mit vielen Kunden zusammengearbeitet und wir freuen uns stets, wenn diese glücklich und zufrieden auf unsere Zusammenarbeit zurückblicken. Schauen Sie, was diese Kunden zu unserer Zusamenarbeit sagen.
